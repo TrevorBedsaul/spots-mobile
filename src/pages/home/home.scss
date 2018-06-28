@@ -1,25 +1,22 @@
 page-home {
 
 //General settings
-.default {
-    height: 100%;
-    width: 100%;
-    background: #722f37; 
+    .default {
+        height: 100%;
+        width: 100%;
+        background: #722f37; 
     // background: radial-gradient(pink, white, black);
-}
+    }
 
-.item-input {
-    background-color: transparent;
-}
+    .item-input {
+        background-color: transparent;
+    }
 
-.button {
-    margin-top: 1em;
-}
+    .button {
+        margin-top: 1em;
+    }
 
-ion-input {
-    color: white;
-}
-
-
-  
+    ion-input {
+        color: white;
+    }
 }
