@@ -1,25 +1,31 @@
 page-home {
 
-//General settings
-.default {
-    height: 100%;
-    width: 100%;
-    background: #722f37; 
-    // background: radial-gradient(pink, white, black);
-}
+    //General settings
+    .default {
+        height: 100%;
+        width: 100%;
+        background: #722f37; 
+        // background: radial-gradient(pink, white, black);
+    }
 
-.item-input {
-    background-color: transparent;
-}
+    .item-input {
+        background-color: transparent;
+    }
 
-.button {
-    margin-top: 1em;
-}
+    #homePic {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        opacity: 0.9;
+    }
 
-ion-input {
-    color: white;
-}
+    ion-input {
+        color: white;
+        opacity: 0.9;
+    }
 
+    .button {
+        margin-top: 1em;
+    }
 
-  
 }
