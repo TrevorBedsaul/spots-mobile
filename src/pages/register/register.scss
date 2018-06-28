@@ -1,11 +1,18 @@
 page-register {
 
-//General settings
+    //General settings
     .default {
         height: 100%;
         width: 100%;
         background: #722f37; 
     // background: radial-gradient(pink, white, black);
+    }
+
+    #coverPic {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border-radius: 0.5em;
+        opacity: 0.9;
     }
 
     .item-input {
@@ -18,5 +25,17 @@ page-register {
 
     ion-input {
         color: white;
+        opacity: 0.9;
     }
+
+    #icon1 {
+        margin-right: 0.5em;
+        margin-left: -0.5em;
+    }
+
+    #icon2 {
+        margin-left: 0.5em;
+        margin-right: -0.5em;
+    }
+
 }

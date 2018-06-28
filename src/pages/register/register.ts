@@ -52,6 +52,10 @@ export class RegisterPage {
       );
   }
 
+  navToHome() {
+    this.navCtrl.push(HomePage);
+  }
+
   checkPassword(){
     if(this.password!=this.confirm_password){
       alert('Passwords do not match');
