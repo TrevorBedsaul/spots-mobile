@@ -1,23 +1,31 @@
-<ion-content padding id="grad">
-  <p style="font-size:50px; text-align: center">
-    Welcome to...
-  </p>
-  <img src="../../assets/imgs/transparent_logo.png" class="responsive; center">
+<ion-content padding class="default">
+
+  <div class="logo">
+    <img src="../../assets/imgs/transparent_logo.png" class="logo">
+  </div>
 
   <ion-list no-lines>
+
     <ion-item>
-      <ion-label style="color: black" stacked>Email</ion-label>
+      <ion-label stacked color="light">Email</ion-label>
       <ion-input [(ngModel)]="email" placeholder="Email"></ion-input>
     </ion-item>
+
     <ion-item>
-      <ion-label style="color: black" stacked>Password</ion-label>
+      <ion-label stacked color="light">Password</ion-label>
       <ion-input [(ngModel)]="password" placeholder="Password" type="password"></ion-input>
     </ion-item>
-    <button ion-button color="dark" icon-left round class="center" (click)="navigateToBrowse()">
-      <ion-icon name="person"></ion-icon>Login
-    </button>
-    <button ion-button color="dark" icon-left round class="center" (click)="navigateToRegister()">
-      <ion-icon name="paper"></ion-icon>Register
-    </button>
+
+    <div class="button">
+      <button ion-button icon-start color="light" round outline (click)="navigateToBrowse()">
+        Login
+      </button>
+
+      <button ion-button icon-start color="light" round outline (click)="navigateToRegister()">
+        Register
+      </button>
+    </div>
+
   </ion-list>
+
 </ion-content>

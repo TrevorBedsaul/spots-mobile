@@ -1,20 +1,23 @@
 page-home {
-    .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
-#grad {
+//General settings
+.default {
     height: 100%;
     width: 100%;
-    background: white; /* For browsers that do not support gradients */
-    background: radial-gradient(pink, white, black); /* Standard syntax (must be last) */
-  }
+    background: #722f37; 
+    // background: radial-gradient(pink, white, black);
+}
 
-  .item-input {
+.item-input {
     background-color: transparent;
+}
+
+.button {
+    margin-top: 1em;
+}
+
+ion-input {
+    color: white;
 }
 
 
