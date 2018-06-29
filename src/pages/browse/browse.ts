@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { SpotPage } from '../spot/spot';
-/**
- * Generated class for the BrowsePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Http } from '@angular/http';
+import { Spot } from '../../models/spot';
 
 @Component({
   selector: 'page-browse',
@@ -14,16 +10,26 @@ import { SpotPage } from '../spot/spot';
 })
 export class BrowsePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modCtrl: ModalController) {
-  }
+  public spots: Array<Spot> = [];
 
-  ionViewDidLoad() {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modCtrl: ModalController, public http: Http) {
+    this.http
+    .get("http://localhost:3000/spots", {
+    })
+    .subscribe(
+        result => {
+            this.spots = result.json();
+            console.log("spots: " + this.spots);
+        },
+        error => {
+            console.log(error);
+        }
+    );
   }
 
  
-  presentModal() {
-    const modal = this.modCtrl.create(SpotPage);
+  presentModal(spot: Spot) {
+    const modal = this.modCtrl.create(SpotPage, { spot: spot });
     modal.present();
   }
 }
