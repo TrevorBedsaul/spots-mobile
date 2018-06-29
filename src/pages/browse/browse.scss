@@ -4,6 +4,7 @@ page-browse {
         ion-card {
           position: relative;
           text-align: center;
+          border-radius: 0.5em;
         }
       
         .card-title {
@@ -21,6 +22,7 @@ page-browse {
           top: 80%;
           width: 100%;
           color: #fff;
+          opacity: 0.9;
         }
       
       }
@@ -28,8 +30,8 @@ page-browse {
       #grad {
         height: 100%;
         width: 100%;
-        background: white; /* For browsers that do not support gradients */
-        background: radial-gradient(pink, white, black); /* Standard syntax (must be last) */
+        background-color: #9c8069; /* For browsers that do not support gradients */
+        background: radial-gradient(#f0bcaf, white, #9c8069); /* Standard syntax (must be last) */
       }
     
 }

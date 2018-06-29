@@ -15,6 +15,7 @@ import { SpotPage } from '../spot/spot';
 export class BrowsePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public modCtrl: ModalController) {
+  
   }
 
   ionViewDidLoad() {

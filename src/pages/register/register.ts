@@ -45,7 +45,8 @@ export class RegisterPage {
           console.log(error);
           let toast = this.toastCtrl.create({
             message: 'Problem with registration',
-            duration: 2000
+            duration: 3000,
+            position: 'top'
           });
           toast.present();
         }

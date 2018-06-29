@@ -16,6 +16,26 @@
 // automatically applied to the <body> element in the app.
 
 //Main contents 
-.content{
+.content {
     text-align: center;
+}
+
+.toolbar-background-md, .toolbar-background-ios {
+    background-color: #722f37;
+}
+
+.toolbar-title-md, .toolbar-title-ios {
+    color:white;
+    text-align: center;
+    opacity: 0.9;
+}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: white;
+    opacity: 0.9;
+}
+
+button.back-button.disable-hover.bar-button.bar-button-ios.back-button-ios.bar-button-default.bar-button-default-ios.show-back-button {
+    color: white;
+    opacity: 0.9;
 }
