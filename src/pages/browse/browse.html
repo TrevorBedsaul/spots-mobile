@@ -14,8 +14,13 @@
 
 <ion-content padding class="card-background-page" id="grad">
 
-  <ion-card (click)="presentModal()">
-    <img src="../../assets/imgs/arcade.jpg" />
+  <ion-card *ngFor="let spot of spots" (click)="presentModal(spot)">
+    <img src={{spot.imageUrl}} />
+  </ion-card>
+  
+  
+  <!-- <ion-card (click)="presentModal()">
+    <img src="../../assets/imgs/coco.jpg" />
   </ion-card>
 
   <ion-card (click)="presentModal()">
@@ -36,8 +41,7 @@
   </ion-card>
 
   <ion-card (click)="presentModal()">
-    <img src="../../assets/imgs/reset.jpg" />
-    <div class="card-subtitle">xx people in your group are going!</div>
-  </ion-card>
+    <img src="../../assets/imgs/gin-bar.jpg" />
+  </ion-card> -->
 
 </ion-content>
