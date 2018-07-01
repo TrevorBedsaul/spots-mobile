@@ -8,8 +8,8 @@ page-home {
         // background: radial-gradient(pink, white, black);
     }
 
-    .item-input {
-        background-color: transparent;
+    .logo {
+        height: 8em;
     }
 
     #homePic {
@@ -17,6 +17,10 @@ page-home {
         margin-bottom: 1em;
         border-radius: 0.5em;
         opacity: 0.9;
+    }
+
+    .item-input {
+        background-color: transparent;
     }
 
     ion-input {
