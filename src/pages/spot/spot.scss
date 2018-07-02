@@ -1,3 +1,37 @@
 page-spot {
+    .card-background-page {
 
+        ion-card {
+          position: relative;
+          text-align: center;
+          border-radius: 0.5em;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+      
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 80%;
+          width: 100%;
+          color: #fff;
+          opacity: 0.9;
+        }
+      
+      }
+      
+      #grad {
+        height: 100%;
+        width: 100%;
+        background-color: #9c8069; /* For browsers that do not support gradients */
+        background: radial-gradient(#f0bcaf, white, #9c8069); /* Standard syntax (must be last) */
+      }
+    
 }

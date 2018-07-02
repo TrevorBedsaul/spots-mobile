@@ -17,8 +17,18 @@
   <ion-card *ngFor="let spot of spots" (click)="presentModal(spot)">
     <img src={{spot.imageUrl}} />
   </ion-card>
-  
-  
+
+  <ion-fab right bottom>
+    <button ion-fab color="light">
+      <ion-icon name="arrow-dropup-circle"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="logout()">
+        <ion-icon name="exit"></ion-icon>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
   <!-- <ion-card (click)="presentModal()">
     <img src="../../assets/imgs/coco.jpg" />
   </ion-card>
