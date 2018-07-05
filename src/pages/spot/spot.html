@@ -7,10 +7,9 @@
 </ion-header>
 
 <ion-content padding id="grad">
-  <h1>{{spot.name}}</h1>
+  <h1>{{spot.name}} {{spot.category}}</h1>
   <img src={{spot.imageUrl}} />
-  <h3>{{spot.category}}</h3>
-  <h6>{{spot.address}}</h6>
+  <p>{{spot.address}}</p>
 
   <button ion-button icon-start color="main" round (click)="presentActionSheet()">
     Group Up
