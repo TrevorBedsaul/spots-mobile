@@ -33,5 +33,16 @@ page-spot {
         background-color: #9c8069; /* For browsers that do not support gradients */
         background: radial-gradient(#f0bcaf, white, #9c8069); /* Standard syntax (must be last) */
       }
+
+      .tabs {
+        font-weight: 300;
+        font-size: 1.2em;
+      }
+
+      .tabs-color {
+        color: #722f37;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
     
 }
